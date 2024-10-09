@@ -15,23 +15,64 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">JJGY</a>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="#about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jossgy" target="_blank">GitHub</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Welcome Message -->
-    <div class="container text-center mt-5">
-        <h1>¡Hola, bienvenido!</h1>
-        <p class="lead">Has iniciado sesión exitosamente.</p>
-        <!-- Additional Content -->
-        <p>Puedes explorar más contenido o regresar a la página principal.</p>
-        <a href="index.html" class="btn btn-secondary mt-3">Regresar al Inicio</a>
-    </div>
+
+    <!-- Hero Section -->
+    <section class="hero text-center d-flex align-items-center" style="background-image: url('hero-bg.jpg'); height: 100vh;">
+        <div class="container">
+            <h1 class="display-4">¡Hola, soy Jose Juan Gonzalez Yescas!</h1>
+            <p class="lead">Estudiante de Ingeniería en Sistemas y desarrollador web.</p>
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="https://imgs.search.brave.com/np-NaC0N3gBsHZTYs6VaesbSU5ZQTfcZ-SAea-uqIb4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODQ3Zjk4ZmNlZjEw/MTRjMGI1ZTQ4YzAu/cG5n" alt="Logo Github" class="me-2" style="width: 1rem; height: 1rem;">
+                <a href="https://github.com/jossgy" class="fst-italic text-decoration-none" target="_blank">GitHub</a>
+            </div>
+            <a href="#about" class="btn btn-primary btn-lg mt-3 p-1">Conoce más sobre mí</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center mb-4">Sobre mí</h2>
+        <p class="lead text-center">
+            Soy estudiante de 7mo semestre de Ingeniería en Sistemas. Me apasiona el desarrollo web y he realizado diversos proyectos escolares utilizando tecnologías como HTML, JavaScript, CSS, C, C++, Python, y Java.
+        </p>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5">
+        <h2 class="text-center mb-4">Habilidades</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h4>Frontend</h4>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Backend</h4>
+                <p>Python</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Otras Tecnologías</h4>
+                <p>Git, Bootstrap, Tailwind CSS</p>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="bg-dark text-white text-center p-3 mt-5">
         &copy; 2024 JJGY. Todos los derechos reservados.
